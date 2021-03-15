@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/alabi/ontologies/2021/2/American_university"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/alabi/ontologies/2021/2/American_university">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Administrative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comprise_trustee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Department_chairman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Faculty_member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Government"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Graduate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Graduate_assistant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non_faculty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ordinary_graduate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#President"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Private"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Support"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Undergraduate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Univeristy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Admits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Cleans"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Learn_research"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Repears"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Teaching"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FacultyID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NonfacultyID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#StudentID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#StudyStartday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jennifer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mark"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#National_University"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Administrative"/>
+        <Class IRI="#Non_faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comprise_trustee"/>
+        <Class IRI="#Administrative"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dean"/>
+        <Class IRI="#Administrative"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Department_chairman"/>
+        <Class IRI="#Administrative"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Faculty_member"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Government"/>
+        <Class IRI="#Univeristy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graduate"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graduate_assistant"/>
+        <Class IRI="#Graduate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance"/>
+        <Class IRI="#Non_faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non_faculty"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ordinary_graduate"/>
+        <Class IRI="#Graduate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#President"/>
+        <Class IRI="#Administrative"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Private"/>
+        <Class IRI="#Univeristy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Support"/>
+        <Class IRI="#Non_faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Undergraduate"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Staff"/>
+        <Class IRI="#Student"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Faculty_member"/>
+        <NamedIndividual IRI="#Jennifer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Graduate"/>
+        <NamedIndividual IRI="#Mark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Univeristy"/>
+        <NamedIndividual IRI="#National_University"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Teaching"/>
+        <NamedIndividual IRI="#Jennifer"/>
+        <NamedIndividual IRI="#Mark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Admits"/>
+        <NamedIndividual IRI="#National_University"/>
+        <NamedIndividual IRI="#Mark"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StudentID"/>
+        <NamedIndividual IRI="#Mark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1234</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StudyStartday"/>
+        <NamedIndividual IRI="#Mark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2021-1-15T08:00:00</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Cleans"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Learn_research"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Repears"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Teaching"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Admits"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Cleans"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Repears"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Teaching"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Admits"/>
+        <Class IRI="#Univeristy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Cleans"/>
+        <Class IRI="#Univeristy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Learn_research"/>
+        <Class IRI="#Univeristy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Repears"/>
+        <Class IRI="#Univeristy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Teaching"/>
+        <Class IRI="#Univeristy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Admits"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Cleans"/>
+        <Class IRI="#Support"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Learn_research"/>
+        <Class IRI="#Graduate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Repears"/>
+        <Class IRI="#Maintenance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Teaching"/>
+        <Class IRI="#Faculty_member"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#StudentID"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#StudyStartday"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#FacultyID"/>
+        <Class IRI="#Faculty_member"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NonfacultyID"/>
+        <Class IRI="#Non_faculty"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StudentID"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StudyStartday"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StudyStartday"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#FacultyID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NonfacultyID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#StudentID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#StudyStartday"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

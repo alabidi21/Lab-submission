@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/alabi/ontologies/2021/2/ICP8Starbucks"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/alabi/ontologies/2021/2/ICP8Starbucks">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grocery_store"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Starbacks_coffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sweetned_Black"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Milk&amp;Mocha"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Milk&amp;Vanilla"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Offer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#buy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Companyday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CustomerN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Starbucksvalue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#National"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Sweetned_Black"/>
+        <Class IRI="#Milk&amp;Mocha"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sweetned_Black"/>
+        <Class IRI="#Milk&amp;Vanilla"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Milk&amp;Mocha"/>
+        <Class IRI="#Milk&amp;Vanilla"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Sweetned_Black"/>
+        <Class IRI="#Starbacks_coffee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Milk&amp;Mocha"/>
+        <Class IRI="#Starbacks_coffee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Milk&amp;Vanilla"/>
+        <Class IRI="#Starbacks_coffee"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Customer"/>
+        <Class IRI="#Grocery_store"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Dave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grocery_store"/>
+        <NamedIndividual IRI="#National"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Offer"/>
+        <NamedIndividual IRI="#National"/>
+        <NamedIndividual IRI="#Dave"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CustomerN"/>
+        <NamedIndividual IRI="#Dave"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-T05:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CustomerN"/>
+        <NamedIndividual IRI="#Dave"/>
+        <Literal>Early</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Offer"/>
+        <Class IRI="#Grocery_store"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#buy"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Offer"/>
+        <Class IRI="#Starbacks_coffee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#buy"/>
+        <Class IRI="#Starbacks_coffee"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CustomerN"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Companyday"/>
+        <Class IRI="#Starbacks_coffee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CustomerN"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Starbucksvalue"/>
+        <Class IRI="#Starbacks_coffee"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Companyday"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CustomerN"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Starbucksvalue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

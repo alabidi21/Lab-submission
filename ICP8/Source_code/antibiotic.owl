@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/alabi/ontologies/2021/2/antibiotic"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/alabi/ontologies/2021/2/antibiotic">
+    <Prefix name="" IRI="http://www.semanticweb.org/alabi/ontologies/2021/2/antibiotic"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Aminogylcosides"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antibiotic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aromatic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Broad_spectrum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chemical_structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhibitor_of_cell_wall_synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhibitor_of_cytoplasmic_membrane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhibitor_of_folic_acid_synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhibitor_of_nucleic_acid_synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhibitor_of_protein_synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microbial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mode_of_action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moderate_spectrum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Narrow_spectrum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Origin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parenteral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quinolones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Range_of_activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Route_ofa_administration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Semi_synthetic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Synthetic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#peptide"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Decreases"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Increases"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Inhibits"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Plasmalevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Urinelevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amikacin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ampicillin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Penicilin"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Aminogylcosides"/>
+        <Class IRI="#Chemical_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aromatic"/>
+        <Class IRI="#Chemical_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broad_spectrum"/>
+        <Class IRI="#Range_of_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chemical_structure"/>
+        <Class IRI="#Antibiotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitor_of_cell_wall_synthesis"/>
+        <Class IRI="#Mode_of_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitor_of_cytoplasmic_membrane"/>
+        <Class IRI="#Mode_of_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitor_of_folic_acid_synthesis"/>
+        <Class IRI="#Mode_of_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitor_of_nucleic_acid_synthesis"/>
+        <Class IRI="#Mode_of_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitor_of_protein_synthesis"/>
+        <Class IRI="#Mode_of_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microbial"/>
+        <Class IRI="#Origin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mode_of_action"/>
+        <Class IRI="#Antibiotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moderate_spectrum"/>
+        <Class IRI="#Range_of_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Narrow_spectrum"/>
+        <Class IRI="#Range_of_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oral"/>
+        <Class IRI="#Route_ofa_administration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Origin"/>
+        <Class IRI="#Antibiotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parenteral"/>
+        <Class IRI="#Route_ofa_administration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quinolones"/>
+        <Class IRI="#Chemical_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Range_of_activity"/>
+        <Class IRI="#Antibiotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Route_ofa_administration"/>
+        <Class IRI="#Antibiotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Semi_synthetic"/>
+        <Class IRI="#Origin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Synthetic"/>
+        <Class IRI="#Origin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#peptide"/>
+        <Class IRI="#Chemical_structure"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Mode_of_action"/>
+        <Class IRI="#Route_ofa_administration"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Parenteral"/>
+        <NamedIndividual IRI="#Amikacin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Oral"/>
+        <NamedIndividual IRI="#Ampicillin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inhibitor_of_cell_wall_synthesis"/>
+        <NamedIndividual IRI="#Penicilin"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Plasmalevel"/>
+        <NamedIndividual IRI="#Amikacin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">178</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Plasmalevel"/>
+        <NamedIndividual IRI="#Ampicillin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Urinelevel"/>
+        <NamedIndividual IRI="#Penicilin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Decreases"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Increases"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Inhibits"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#Decreases"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#Increases"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Decreases"/>
+        <Class IRI="#Range_of_activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Increases"/>
+        <Class IRI="#Mode_of_action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Inhibits"/>
+        <Class IRI="#Mode_of_action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Inhibits"/>
+        <Class IRI="#Microbial"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Plasmalevel"/>
+        <Class IRI="#Parenteral"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Plasmalevel"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
